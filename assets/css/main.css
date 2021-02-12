@@ -2868,6 +2868,10 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	p {
+		font-size: 0.94em;
+	}
+
 	header p {
 		color: rgba(255, 255, 255, 0.35);
 		position: relative;
