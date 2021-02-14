@@ -16,12 +16,19 @@
 
 		<!-- Sidebar -->
 			<section id="sidebar">
-				<div class="inner">
+				<div class="inner" style="font-size: large;">
 					<nav>
 						<ul>
 							<li><a href="#intro">Cover</a></li>
 							<li><a href="#one">Me</a></li>
-							<li><a href="#two">Project</a></li>
+							<li>
+								<a href="#two">Project</a>
+								<ul class="actions" style="padding-top: 0.5em;">
+									<li><a href="#published" style="text-transform: none;">Published</a></li>
+									<li><a href="#onhold" style="text-transform: none;">On hold</a></li>
+									<li><a href="#others" style="text-transform: none;">Others</a></li>
+								</ul>
+							</li>
 							<li><a href="#three">Contact</a></li>
 						</ul>
 					</nav>
@@ -35,7 +42,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<div class="row" style="padding-top: 4em;">
-								<div class="col-8 col-12-medium">
+								<div class="col-8 col-12-medium" style="padding-left: 1.5em;">
 									<h1>Bảo Nguyễn</h1>
 									<p>Game Programmer</p>
 									<ul class="icons">
@@ -195,7 +202,7 @@
 									<br><br>
 								</span>
 							</p>
-							<h3>Published projects</h3>
+							<h3 id="published">Published</h3>
 							<p>
 								As a result, our teams now have 2 published games, and looking for more in the future, with more customers attracted. 
 							</p>
@@ -241,7 +248,7 @@
 									</ul>
 								</section>	
 							</div>
-							<h3>On hold</h3>
+							<h3 id="onhold">On hold</h3>
 							<p>
 								Project that is temporarily paused, as it's not ready to bring pleasant experience to players, and team members are currently busy with other works.
 							</p>
@@ -271,7 +278,7 @@
 									</ul>
 								</section>
 							</div>
-							<h3>Others</h3>
+							<h3 id="others">Others</h3>
 							<p>
 								Playable demos, course assignments, learning materials, etc.
 							</p>
