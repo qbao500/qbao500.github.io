@@ -3557,7 +3557,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 16em;
-		z-index: 10;
+		z-index: 100;
 	}
 
 		#sidebar > .inner {
@@ -3943,8 +3943,10 @@ input, select, textarea {
   .dropdown-content {
 	display: none;
 	position: relative;
-	overflow-y: hidden;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display:block;}
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display:inline;
+	z-index: 1500;
+	}
