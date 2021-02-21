@@ -145,6 +145,9 @@
 										Contact working is preferable for me since it offers more effective communication. 
 										Therefore, I'm willing to relocate anywhere in Finland. 
 									</p>
+									<ul class="actions" style="margin-top: 1.5em;">
+										<li><a class="button primary" onclick="showMore('self', 'flex')" id="selfBtn" title="about myself">Read More</a></li>
+									</ul>
 								</div>
 							</div>
 							<a class="image">
@@ -153,7 +156,7 @@
 								</video>
 							</a>
 						</section>
-						<section>
+						<section name="selfMore" style="display: none;">
 							<a class="image"><img src="images/Education.webp" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
@@ -169,7 +172,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section name="selfMore" style="display: none;">
 							<div class="content">
 								<div class="inner">
 									<p>
@@ -185,12 +188,13 @@
 							</div>
 							<a class="image"><img src="images/4.webp" alt="" data-position="center center" /></a>
 						</section>
-						<div class="box alt">
+						<div name="selfMore" style="display: none;" class="box alt">
 							<div class="row gtr-uniform">
 								<div class="col-4"><span class="image main"><img src="images/2.webp" alt="" /></span></div>
 								<div class="col-4"><span class="image main"><img src="images/1.webp" alt="" /></span></div>
 								<div class="col-4"><span class="image main"><img src="images/3.webp" alt="" /></span></div>
 							</div>
+						</div>
 					</section>
 
 				<!-- Two -->
@@ -297,7 +301,11 @@
 									<br>
 									<h3>Penguin - Unity ML<span style="float: right;font-size: 0.9em;">Unity / Python environment</span></h3>
 									<h4>05/2020<span style="float: right;">C#</span></h4>
-									<p>
+									
+									<p id="mlLess" style="display: block;">
+										Reinforcement Learning to train the Penguin, making it find the fish and avoid bones, then feed the hungry baby.<br><br>
+									</p>
+									<p id="mlMore" style="display: none;">
 										It's actually a <b><a href="https://bit.ly/3qHtmnG" target="_blank" rel="noopener noreferrer">tutorial</a></b> that I followed to learn Unity Machine Learning.
 										The author utilizes Reinforcement Learning to train the Penguin, making it find the fish and avoid bones, then feed the hungry baby.
 										<br><br>
@@ -309,10 +317,12 @@
 										Although I was not making this from scratch, it was great for me to learn some basic knowledge of Unity ML.
 										It's also a useful and interesting experience to observe your "kid" getting smarter and better.
 										In short, nothing goes wrong when studying Machine Learning, and I hope I can practically learn more of it.
+										<br><br>
+										<a href="documents/Unity Machine Learning - Self Document - Bao Nguyen.pdf" class="button" target="_blank" rel="noopener noreferrer">Document</a>
 									</p>
-									<ul class="actions">
-										<li><a href="documents/Unity Machine Learning - Self Document - Bao Nguyen.pdf" class="button" target="_blank" rel="noopener noreferrer">Document</a></li>
-									</ul>									
+									<ul class="actions" style="float: right;">
+										<li><a class="button primary small" onclick="showMoreLess('ml')" id="mlBtn">Read More</a></li>
+									</ul>
 								</section>
 								<section>
 									<span class="image left";>
@@ -323,14 +333,21 @@
 									</span>
 									<h3>Level Design<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
 									<h4>04/2020<span style="float: right;">Blueprint</span></h4>
-									<p>
+									<p id="levelLess" style="display: block;">
+										Lead players to a Victory destination, using colors, lights, and ready-made mechanics.<br><br>
+									</p>
+									<p id="levelMore" style="display: none;">
 										An assignment in Level Design course, utilizing First Person Template in UE4. 
-										The task is to lead players to a Victory destination, with colors, lights, and ready-made mechanics. 
+										The task is to lead players to a Victory destination, using colors, lights, and ready-made mechanics. 
 										<br><br>
 										As a Programmer, I tweaked it a little bit to offer some difficulties to the level. 
 										I also took advanced of the built-in physics and control to create more challenges.
 										The result may seem hard, but I believe it would make more sense if it's in a complete game.
+										<br><br>
 									</p>
+									<ul class="actions" style="float: right;">
+										<li><a class="button primary small" onclick="showMoreLess('level')" id="levelBtn">Read More</a></li>
+									</ul>
 								</section>
 								<section>
 									<span class="image left">
@@ -355,13 +372,17 @@
 										<div class="col-7 col-12-medium">
 											<h3>Combat - Atari 2600<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
 											<h4>02/2020<span style="float: right;">Blueprint</span></h4>
-											<ul class="actions" style="padding-top: 2em; padding-left: 1em;">
+											<ul class="actions" style="padding-top: 2em; display: inline;">
 												<li><a href="https://baonguyen.itch.io/combat-2020" class="button" target="_blank" rel="noopener noreferrer">Itch.io</a></li>
+												<li><a class="button primary small" onclick="showMoreLess('combat')" id="combatBtn" style="float: right;">Read More</a></li>
 											</ul>
 										</div>
 									</div>
 									<br>
-									<p>
+									<p id="combatLess" style="display: block;">
+										An upgraded replication of this <b><a href="https://bit.ly/39YEplM" target="_blank" rel="noopener noreferrer">game</a></b> on Retro Games page.
+									</p>
+									<p id="combatMore" style="display: none;">
 										An assignment in Game Design course, in which the task is to replicate a very old game and "upgrade" it. 
 										I found this <b><a href="https://bit.ly/39YEplM" target="_blank" rel="noopener noreferrer">game</a></b> on Retro Games page, which was made in 1977.
 										It is a local multiplayer game that 2 players try to kill each other and compete who has more kills to win. 
@@ -395,6 +416,7 @@
 											</ul>
 										</div>
 									</div>
+									
 								</section>													
 							</div>
 						</div>

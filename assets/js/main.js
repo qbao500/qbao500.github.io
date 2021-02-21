@@ -188,3 +188,42 @@
 			});
 
 })(jQuery);
+
+function showMoreLess(name, show = "block"){
+	var less = document.getElementById(name + "Less");
+	var more = document.getElementById(name + "More");
+	var btn = document.getElementById(name + "Btn");
+
+	if (btn.innerHTML === "Read More")
+	{
+		if(less) less.style.display = "none";
+		more.style.display = show;
+		btn.innerHTML = "Show Less";
+	}
+	else
+	{
+		if(less) less.style.display = show;
+		more.style.display = "none";
+		btn.innerHTML = "Read More";
+	}
+}
+
+function showMore(name, show = "block"){
+	var more = document.getElementsByName(name + "More");
+	var btn = document.getElementById(name + "Btn");
+
+	if (btn.innerHTML === "Read More")
+	{
+		more.forEach(m => {
+			m.style.display = show;
+		});
+		btn.innerHTML = "Show Less";
+	}
+	else
+	{
+		more.forEach(m => {
+			m.style.display = "none";
+		});
+		btn.innerHTML = "Read More";
+	}
+}
