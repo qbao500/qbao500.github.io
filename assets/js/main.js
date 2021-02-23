@@ -194,17 +194,17 @@ function showMoreLess(name, show = "block"){
 	var more = document.getElementById(name + "More");
 	var btn = document.getElementById(name + "Btn");
 
-	if (btn.innerHTML === "Read More")
+	if (more.style.display === "none")
 	{
 		if(less) less.style.display = "none";
 		more.style.display = show;
-		btn.innerHTML = "Show Less";
+		if (btn) btn.innerHTML = "Show Less";
 	}
 	else
 	{
 		if(less) less.style.display = show;
 		more.style.display = "none";
-		btn.innerHTML = "Read More";
+	 	if (btn) btn.innerHTML = "Read More";
 	}
 }
 
