@@ -2576,7 +2576,8 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 35%;
+			min-width: 15%;
 		}
 
 			.image.left img, .image.right img {
@@ -3017,7 +3018,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		min-height: 40%;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3030,7 +3031,8 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 40%;
+			padding-bottom: 30%;
 		}
 
 			.spotlights > section > .image img {
@@ -3068,7 +3070,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 100%;
 			-ms-flex: 1;
 		}
 
@@ -3229,7 +3231,7 @@ input, select, textarea {
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
-			width: 75em;
+			width: 100%;
 		}
 
 			@media screen and (max-width: 1680px) {
@@ -3486,7 +3488,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 16em;
+		margin-left: 20%;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3513,7 +3515,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 16em;
+		margin-left: 20%;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3554,7 +3556,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 16em;
+		width: 20%;
 		z-index: 100;
 	}
 
@@ -3947,6 +3949,8 @@ input, select, textarea {
 	/* Handle */
 	::-webkit-scrollbar-thumb {
 		background: #7a3fab; 
+		border-radius: 0.5em;
+		border: 0;
 	}	
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
