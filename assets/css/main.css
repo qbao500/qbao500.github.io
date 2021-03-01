@@ -3028,16 +3028,17 @@ input, select, textarea {
 		.spotlights > section > .image {
 			background-position: center center;
 			background-size: cover;
+			background-repeat: no-repeat;
 			border-radius: 0;
 			display: block;
 			position: relative;
 			width: 40%;
-			padding-bottom: 30%;
 		}
 
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
+				max-width: 100%;
 			}
 
 			.spotlights > section > .image:before {
@@ -3488,7 +3489,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 20%;
+		margin-left: 20vw;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3515,7 +3516,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 20%;
+		margin-left: 20vw;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3556,7 +3557,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 20%;
+		width: 20vw;
 		z-index: 100;
 	}
 
@@ -3898,9 +3899,9 @@ input, select, textarea {
 	#intro {
 		background-attachment: fixed;
 		background-image: url("../../images/cover.webp");
-		background-position: top right;
+		background-position: bottom left;
 		background-repeat: no-repeat;
-		background-size: auto 100%;
+		background-size: 100%;
 		
 		
 	}
