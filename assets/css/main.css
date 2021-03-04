@@ -3934,8 +3934,13 @@ input, select, textarea {
 
 		}
 
-	.button.gallery{
+	.button.gallery {
 		text-transform: none;
+	}
+
+	.CV {
+		float: left;
+		z-index: 1000;
 	}
 
 	/* Stylize scrollbar */
