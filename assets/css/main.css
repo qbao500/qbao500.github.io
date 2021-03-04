@@ -3939,8 +3939,10 @@ input, select, textarea {
 	}
 
 	.CV {
-		float: left;
-		z-index: 1000;
+		font-size: small; 
+		list-style: none; 
+		margin-top: -10vh; 
+		opacity: 0.75;
 	}
 
 	/* Stylize scrollbar */
