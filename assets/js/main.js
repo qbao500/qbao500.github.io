@@ -27,6 +27,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				$('#loading').hide();
 			}, 100);
 		});
 
