@@ -203,7 +203,7 @@ function showMoreLess(name, show = "block"){
 	}
 	else
 	{
-		if(less) less.style.display = show;
+		if (less) less.style.display = show;
 		more.style.display = "none";
 	 	if (btn) btn.innerHTML = "Read More";
 	}
