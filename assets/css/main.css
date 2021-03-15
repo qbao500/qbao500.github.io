@@ -2534,8 +2534,8 @@ input, select, textarea {
 			}
 		  
 			25% {
-			  -webkit-transform: scale(1);
-			  transform: scale(1);
+			  -webkit-transform: scale(1.1);
+			  transform: scale(1.1);
 			}
 		  
 			60% {
@@ -2557,9 +2557,9 @@ input, select, textarea {
 			}
 		  
 			25% {
-			  -webkit-transform: scale(1);
-			  -ms-transform: scale(1);
-			  transform: scale(1);
+			  -webkit-transform: scale(1.1);
+			  -ms-transform: scale(1.1);
+			  transform: scale(1.1);
 			}
 		  
 			60% {
