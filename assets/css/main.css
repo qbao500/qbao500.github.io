@@ -3955,7 +3955,7 @@ input, select, textarea {
 		background-image: url("../../images/cover.webp");
 		background-position: bottom left;
 		background-repeat: no-repeat;
-		background-size: 100%;		
+		background-size:cover				
 	}
 
 		#intro p {
