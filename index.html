@@ -14,11 +14,15 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js"></script>
 	<link rel="icon" href="images/favicon.ico">
 </head>
 
 <body class="is-preload">
 
+	<!-- Game screen -->
+	<article id="game"></article>
+	
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner" style="font-size: large;">
@@ -60,8 +64,13 @@
 			<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHlsZT0ibWFyZ2luOiBhdXRvOyBiYWNrZ3JvdW5kOiBub25lOyBkaXNwbGF5OiBibG9jazsgc2hhcGUtcmVuZGVyaW5nOiBhdXRvOyIgd2lkdGg9IjIwMHB4IiBoZWlnaHQ9IjIwMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPgo8cGF0aCBkPSJNMTAgNTBBNDAgNDAgMCAwIDAgOTAgNTBBNDAgNDIgMCAwIDEgMTAgNTAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0ibm9uZSI+CiAgPGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBrZXlUaW1lcz0iMDsxIiB2YWx1ZXM9IjAgNTAgNTE7MzYwIDUwIDUxIj48L2FuaW1hdGVUcmFuc2Zvcm0+CjwvcGF0aD4KPCEtLSBbbGRpb10gZ2VuZXJhdGVkIGJ5IGh0dHBzOi8vbG9hZGluZy5pby8gLS0+PC9zdmc+" loading="lazy">
 			<p>Welcome, I'm <b>Bao</b>.</p>
 		</div>
-
-		<!-- Intro -->
+	
+		<!-- Play button onclick="playGame()"-->
+		<div class="play" title="Mini Game (coming soon)">			
+			<a class="far fa-play-circle"></a>			
+		</div>
+					
+		<!-- Cover -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<div class="row" style="padding-top: 4em;">
@@ -138,7 +147,7 @@
 			</div>
 		</section>
 
-		<!-- One -->
+		<!-- Me -->
 		<section id="me" class="wrapper style2 spotlights">
 			<section>
 				<a class="image"><img src="images/AboutMe.webp" alt="" data-position="center center" loading="lazy"/></a>
@@ -235,7 +244,7 @@
 			</div>
 		</section>
 
-		<!-- Two -->
+		<!-- Project -->
 		<section id="project" class="wrapper style3 fade-up">
 			<div class="inner">
 				<h2>Projects</h2>
@@ -251,8 +260,7 @@
 						<br><br>
 					</span>
 				</p>
-				<h3 id="published">
-					<i class="fas fa-upload"></i>
+				<h3 id="published"><i class="fas fa-upload"></i>
 					Published</h3>
 				<p>
 					As a result, our teams have 2 polished games shipped, and looking for more in the future, with more customers attracted.
@@ -308,8 +316,7 @@
 						</ul>
 					</section>
 				</div>
-				<h3 id="onhold">
-					<i class="fas fa-pause"></i>
+				<h3 id="onhold"><i class="fas fa-pause"></i>
 					On hold</h3>
 				<p>
 					Project that is temporarily paused, as it's not ready to bring pleasant and immersive experience to
@@ -369,13 +376,13 @@
 						</div>
 					</section>
 				</div>
-				<h3 id="others">
-					<i class="fas fa-grip-horizontal"></i>
+				<h3 id="others"><i class="fas fa-grip-horizontal"></i>
 					Others</h3>
 				<p>
 					Playable demos, course assignments, learning materials, etc.
 				</p>
 				<div class="features">
+					<!-- Penguin - Unity ML -->
 					<section>
 						<iframe class="image left" src="https://www.youtube.com/embed/clooYeUSGqg" frameborder="0" loading="lazy"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -422,6 +429,7 @@
 						<a class="button primary small" onclick="showMoreLess('ml')" id="mlBtn"
 							style="float: right;">Read More</a>
 					</section>
+					<!-- Level Desig -->
 					<section>
 						<iframe class="image left" src="https://www.youtube.com/embed/0Svb5N5OeBs" frameborder="0" loading="lazy"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -459,17 +467,19 @@
 							</li>
 						</ul>
 					</section>
+					<!-- Database SQLite -->
 					<section>
 						<span class="image left">
 							<img src="images/database.webp" alt="" loading="lazy">
 						</span>
-						<h3>Database SQLite<span style="float: right;font-size: 0.9em;">Visual Studio</span></h3>
-						<h4>04/2020<span style="float: right;">SQLite / C++</span></h4>
+						<h3>Database<span style="float: right;font-size: 0.9em;">SQLite</span></h3>
+						<h4>04/2020<span style="float: right;">C++</span></h4>
 						<ul class="actions" style="padding-top: 0.5em;">
 							<li><a href="documents/Final Database Assignment_Bao.pdf" class="button" target="_blank"
 									rel="noopener noreferrer">Document + Code</a></li>
 						</ul>
 					</section>
+					<!-- Combat 2020 -->
 					<section>
 						<iframe class="image left" src="https:///www.youtube.com/embed/L4AlTbJi3YA" frameborder="0" loading="lazy"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -516,6 +526,7 @@
 						<a class="button primary small" onclick="showMoreLess('combat')" id="combatBtn"
 							style="float: right;">Read More</a>
 					</section>
+					<!-- The F-Converter -->
 					<section>
 						<video class="image left" width="220" height="300" controls autoplay muted loop>
 							<source src="images/converter.mp4" type="video/mp4">
@@ -539,8 +550,7 @@
 						</ul>
 					</section>
 				</div>
-				<h3 id="ongoing">
-					<i class="fas fa-forward"></i>
+				<h3 id="ongoing"><i class="fas fa-forward"></i>
 					Ongoing</h3>
 				<p>
 					Including this website.
@@ -556,13 +566,13 @@
 							However, at the moment, I'm ...
 						</p>
 						<ul class="inside">
-							<li>Working with Datacenter department to deploy a simple Matchmaking System with Dedicated Server and Database</li>
+							<li>Collaborated with Datacenter department to deploy a simple Matchmaking System with Dedicated Server and Database</li>
 							<li>Established REST architecture for server communications, with the support of
 								<a href="https://www.unrealengine.com/marketplace/en-US/product/varest-plugin"
 									target="_blank" rel="noopener noreferrer">VaRest plugin</a>
 							</li>
 							<li>Developing game rules and game flows on the Server and Engine</li>
-							<li style="opacity: 0.7;">TODO - Login system and save players information</li>
+							<li>Implementing Ability System for each Character./li>
 							<li>(to be updated)</li>
 						</ul>
 					</section>
@@ -574,7 +584,7 @@
 							<span style="float: right; font-size: 0.9em;"><a href="https://html5up.net/" target="_blank" rel="noopener noreferrer">
 								HTML5 UP</a></span>
 							</h3>
-						<h4>12/2020 – present<span style="float: right;">HTML / CSS</span></h4>
+						<h4>12/2020 – present<span style="float: right;">HTML / CSS / JS</span></h4>
 						<p>
 							Yes, this website is made from a
 							<a href="https://html5up.net/hyperspace" target="_blank"
@@ -593,12 +603,9 @@
 						</p>
 					</section>
 				</div>
-				<h3 id="ongoing">
-					<i class="fas fa-laptop-code"></i>
+				<h3><i class="fas fa-laptop-code"></i>
 					Extra Courses</h3>
-				<p>
-					Not that important, but if you want to check more:
-				</p>
+				<p>Not that important, but if you want to check more:</p>
 				<div class="features" style="text-align: center;">
 					<section style="width: 50%;">
 						<h4>Udemy Courses</h4>
@@ -633,7 +640,7 @@
 			</div>
 		</section>
 
-		<!-- Three -->
+		<!-- Contact -->
 		<section id="contact" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Get in touch</h2>
@@ -701,6 +708,7 @@
 						fhsh.src = "//freehostedscripts.net/ocount.php?site=" + fhs_id_h + "&name=Visits&a=1";
 						document.head.appendChild(fhsh);
 						document.write("<span id='h_" + fhs_id_h + "'></span>");
+						rel="noopener noreferrer";
 					</script>
 				</li>
 			</ul>
@@ -715,6 +723,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/game.js"></script>
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 </body>

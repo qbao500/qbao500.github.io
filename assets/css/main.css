@@ -24,7 +24,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -4056,3 +4058,31 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	#game {
+		min-height: 100vh;
+		min-width: 100vw;
+		background-color: rgba(0, 0, 0, 0.8);
+		display: none;
+		place-items: center;
+		position: fixed;
+		z-index: 9999;
+	}
+
+	.play {
+		position: fixed;
+		z-index: 9000;
+		bottom: 5%;
+  		right: 3%;
+  		transform: scale(3,3); 	
+  		opacity: 0.15;
+	}
+
+	.play a {
+		border: 0
+	}
+
+	.play:hover {
+		/*opacity: 0.8;*/
+		transform: scale(3.5,3.5);
+		cursor: not-allowed;	
+	}

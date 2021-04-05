@@ -228,3 +228,10 @@ function showMore(name, show = "block"){
 		btn.innerHTML = "Read More";
 	}
 }
+
+function playGame()
+{
+	document.body.style.overflow = 'hidden';
+	var gameScreen = document.getElementById("game");
+	gameScreen.style.display = "grid";
+}
