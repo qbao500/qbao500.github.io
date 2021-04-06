@@ -2739,6 +2739,22 @@ input, select, textarea {
 		list-style-position: inside;				
 	}
 
+	li.tick {		
+		list-style: '✔' inside;
+	}
+
+	li.tick::before {
+		content: " ";
+	}
+
+	li.dash {
+		list-style: '⇀' inside;
+	}
+
+	li.dash::before {
+		content: " ";
+	}
+
 
 	ul.actions {
 		display: -moz-flex;
