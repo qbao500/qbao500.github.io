@@ -4102,3 +4102,18 @@ input, select, textarea {
 		transform: scale(3.5,3.5);
 		cursor: not-allowed;	
 	}
+
+	#signature {
+		stroke-dasharray: 1405;
+		stroke-dashoffset: 1405;
+		animation: sign 6s ease-in-out infinite alternate;
+		animation-fill-mode: both;		
+	}
+
+	@keyframes sign {
+		to {
+			stroke-dashoffset: 350;
+		}
+	}
+
+
