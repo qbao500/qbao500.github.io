@@ -4004,6 +4004,11 @@ input, select, textarea {
 
 		}
 
+	.inactiveLink {
+	   pointer-events: none;
+	   cursor: default;
+	}
+
 	.button.gallery {
 		text-transform: none;
 	}

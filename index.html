@@ -730,14 +730,25 @@
 		<div class="inner">
 			<ul class="menu">
 				<li>Design: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
-				<li>
+				<li class="inactiveLink">
 					<script language="JavaScript">
 						var fhsh = document.createElement('script');
 						var fhs_id_h = "3359796";
 						fhsh.src = "//freehostedscripts.net/ocount.php?site=" + fhs_id_h + "&name=Visits&a=1";
 						document.head.appendChild(fhsh);
 						document.write("<span id='h_" + fhs_id_h + "'></span>");
-						rel="noopener noreferrer";
+					</script>
+				</li>
+				<li class="inactiveLink">
+					<script language="JavaScript">
+						var fhs = document.createElement('script');
+						var fhs_id = "5657924";
+						var ref = (''+document.referrer+'');
+						var pn =  window.location;
+						var w_h = window.screen.width + " x " + window.screen.height;
+						fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Online&e2=Online&r="+ref+"&wh="+w_h+"&a=1&pn="+pn+"";
+						document.head.appendChild(fhs);
+						document.write("<span id='o_"+fhs_id+"'></span>");
 					</script>
 				</li>
 			</ul>
