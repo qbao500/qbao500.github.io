@@ -379,9 +379,33 @@
 				<h3 id="others"><i class="fas fa-grip-horizontal"></i>
 					Others</h3>
 				<p>
-					Playable demos, course assignments, learning materials, etc.
+					Small projects, demos, course assignments, learning materials, etc.
 				</p>
 				<div class="features">
+					<!-- Snake AI -->
+					<section>
+						<iframe class="image left" src="https://www.youtube.com/embed/HiqkWeHuEXQ" frameborder="0" loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen style="margin: 0 5;">
+						</iframe>
+						<h3>
+							Snake AI
+							<a href="https://github.com/qbao500/SnakeCPP" class="icon brands fa-github"
+								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+							<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
+						<h4>21 -22/04/2021<span style="float: right;">C++</span></h4>
+						<p id="snakeLess" style="display: block;">
+							Snake controls itself to grab the fruit and still prioritizes safety.<br><br>
+						</p>
+						<p id="snakeMore" style="display: none;">
+							Snake controls itself to grab the fruit and still prioritizes safety.<br>
+							It's not the smartest, but good enough to give player fun and challenges.<br>
+							Of course, there's a option to let players manually control the Snake in the project. 
+						</p>
+						<ul class="actions" style="float: right;">
+							<li><a class="button primary small" onclick="showMoreLess('snake')" id="snakeBtn">Read More</a></li>
+						</ul>
+					</section>
 					<!-- Penguin - Unity ML -->
 					<section>
 						<iframe class="image left" src="https://www.youtube.com/embed/clooYeUSGqg" frameborder="0" loading="lazy"
@@ -429,7 +453,7 @@
 						<a class="button primary small" onclick="showMoreLess('ml')" id="mlBtn"
 							style="float: right;">Read More</a>
 					</section>
-					<!-- Level Desig -->
+					<!-- Level Design -->
 					<section>
 						<iframe class="image left" src="https://www.youtube.com/embed/0Svb5N5OeBs" frameborder="0" loading="lazy"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -457,8 +481,7 @@
 							<br><br>
 						</p>
 						<ul class="actions" style="float: right;">
-							<li><a class="button primary small" onclick="showMoreLess('level')" id="levelBtn">Read
-									More</a></li>
+							<li><a class="button primary small" onclick="showMoreLess('level')" id="levelBtn">Read More</a></li>
 						</ul>
 						<ul class="actions" style="position: relative; margin-top: -1%;">
 							<li>
@@ -713,8 +736,7 @@
 									</li>
 								</ul>
 							</div>
-						</div>
-						
+						</div>					
 					</section>
 					<section>
 						<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="300" viewBox="0, 0, 400,300"><g id="svgg"><path id="signature" d="M133.057 89.760 C 105.771 99.467,91.144 119.355,111.290 119.355 C 115.991 119.355,119.018 117.686,118.548 115.354 C 116.426 104.828,161.926 92.269,178.768 98.732 C 191.284 103.535,179.350 118.645,153.362 130.901 C 135.305 139.418,132.531 138.908,139.357 128.326 C 141.968 124.279,146.687 116.976,149.843 112.097 C 159.758 96.769,144.762 100.413,133.996 115.948 C 127.378 125.499,122.644 128.916,115.009 129.658 C 103.924 130.734,102.295 136.483,112.616 138.107 C 118.532 139.037,118.051 140.726,106.498 159.602 C 99.602 170.869,93.504 182.701,92.947 185.895 C 91.484 194.292,102.173 195.496,104.797 187.230 L 106.918 180.544 115.185 187.046 C 130.168 198.832,159.341 193.268,175.826 175.480 L 183.906 166.763 181.978 176.402 C 178.326 194.661,189.747 200.609,206.466 189.153 L 217.589 181.531 221.054 188.346 C 223.432 193.025,226.995 194.856,232.420 194.189 C 236.767 193.654,246.544 193.353,254.148 193.519 C 284.013 194.174,321.736 144.361,298.163 135.399 C 282.318 129.374,259.482 144.690,247.977 169.057 C 243.211 179.151,233.909 186.597,230.421 183.110 C 229.241 181.929,232.724 171.456,238.162 159.837 C 243.599 148.217,247.761 138.522,247.411 138.294 C 245.106 136.788,225.929 136.331,218.710 137.609 C 213.920 138.457,204.247 144.734,197.216 151.558 C 184.791 163.616,184.380 163.758,182.584 156.601 C 181.567 152.550,176.279 147.078,170.831 144.440 L 160.927 139.643 170.851 135.532 C 223.842 113.583,188.025 70.205,133.057 89.760 M291.894 145.095 C 296.484 152.520,271.053 183.871,260.440 183.871 C 255.663 183.871,254.874 182.357,256.657 176.613 C 262.829 156.734,286.180 135.848,291.894 145.095 M226.075 154.462 C 217.766 166.131,196.668 184.840,194.388 182.560 C 187.688 175.860,214.248 145.274,226.833 145.197 C 232.325 145.164,232.277 145.752,226.075 154.462 M153.139 151.472 C 154.187 153.169,156.944 153.828,159.264 152.938 C 167.325 149.845,172.565 160.631,166.341 167.508 C 155.229 179.786,122.870 185.651,125.000 175.000 C 125.444 172.782,123.629 170.968,120.968 170.968 C 115.220 170.968,115.004 169.419,119.566 160.896 C 125.032 150.683,148.568 144.076,153.139 151.472" stroke="white" fill="none" fill-rule="evenodd"></path></g></svg>             
@@ -722,7 +744,6 @@
 				</div>
 			</div>
 		</section>
-
 	</div>
 
 	<!-- Footer -->
