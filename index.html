@@ -406,6 +406,39 @@
 							<li><a class="button primary small" onclick="showMoreLess('snake')" id="snakeBtn">Read More</a></li>
 						</ul>
 					</section>
+					<!-- Battleship -->
+					<section>
+						<iframe class="image left" src="https://www.youtube.com/embed/GR81P6NFLaI" frameborder="0" loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen style="margin: 0 5;">
+						</iframe>
+						<h3>
+							Battleship - Player vs AI
+							<a href="https://github.com/qbao500/BattleCPP" class="icon brands fa-github"
+								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+							<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
+						<h4>12 -13/04/2021<span style="float: right;">C++</span></h4>
+						<p id="shipLess" style="display: block;">
+							Classic Battleship game, where Player fight with Enemy AI.<br>
+							Enemy has 3 Attack States: 
+								<b>Random Attack</b>, <b>Searching Attack</b>, and <b>Forward Attack</b>.<br><br>
+						</p>
+						<p id="shipMore" style="display: none;">
+							Classic Battleship game, where Player fight with Enemy AI.<br>
+							Enemy has 3 Attack States: 
+								<b>Random Attack</b>, <b>Searching Attack</b>, and <b>Forward Attack</b>.<br><br>
+							<b>Random Attack:</b> Default state, attack to a random Cell. 
+								If hit a ship, move to Searching Attack.<br><br>
+							<b>Searching Attack:</b> Find attackable neighbors of last hit Cell, then attack 1 of them.
+								If hit, move to Forward Attack. If not, keep attack other neighbors.
+								If no neighbor left, move back to Random Attack.<br><br>
+							<b>Forward Attack:</b> Keep attacking in the forward direction of last hit neighbor. 
+								Move back to Searching Attack if miss.
+						</p>
+						<ul class="actions" style="float: right;">
+							<li><a class="button primary small" onclick="showMoreLess('ship')" id="shipBtn">Read More</a></li>
+						</ul>
+					</section>
 					<!-- Penguin - Unity ML -->
 					<section>
 						<iframe class="image left" src="https://www.youtube.com/embed/clooYeUSGqg" frameborder="0" loading="lazy"
@@ -784,7 +817,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/game.js"></script>
+	<!-- <script src="assets/js/game.js"></script> -->
 
 </body>
 
