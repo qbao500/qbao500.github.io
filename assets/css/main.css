@@ -6,7 +6,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
+:root {
+	--data-count: 1;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -4116,9 +4118,25 @@ input, select, textarea {
 	}
 
 	@keyframes sign {
-		to {
-			stroke-dashoffset: 350;
-		}
+		to { stroke-dashoffset: 350; }
 	}
 
+	.type-writer {
+		position: relative;
+		width: max-content; 
+		clip-path: inset(0% calc(100% - 0.1em) 0% 0%);
+		animation: typing 0.7s 0.7s forwards;
+	}
 
+	.type-writer::before, .type-writer::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	@keyframes typing {
+		to { clip-path: inset(0% 0% 0% 0%); }
+	}

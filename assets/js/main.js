@@ -28,6 +28,7 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 				$('#loading').hide();
+				GetTypingEl();
 			}, 100);
 		});
 
@@ -234,4 +235,13 @@ function playGame()
 	document.body.style.overflow = 'hidden';
 	var gameScreen = document.getElementById("game");
 	gameScreen.style.display = "grid";
+}
+
+/* Auto set length of text via css variable. */
+function GetTypingEl() {
+	var typeElements = document.getElementsByClassName("type-writer");
+	for (i = 0; i < typeElements.length; i++)
+	{
+		document.documentElement.style.setProperty('--data-count', typeElements[i].innerHTML.length);
+	}
 }
