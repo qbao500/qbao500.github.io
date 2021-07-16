@@ -9,13 +9,14 @@
 <head>
 	<title>Bao Nguyen - Portfolio</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<link rel="icon" href="images/favicon.ico">
-	<script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js" defer async></script>
+    <!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- <script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js" defer async></script> -->
 </head>
 
 <body class="is-preload">
@@ -37,7 +38,7 @@
 							<a href="#project">Project</a>
 							<div class="dropdown-content">
 								<ul class="nobullet">
-									<li><a href="#project" style="text-transform: none;">Published</a></li>
+									<li><a href="#published" style="text-transform: none;">Published</a></li>
 									<li><a href="#onhold" style="text-transform: none;">On hold</a></li>
 									<li><a href="#others" style="text-transform: none;">Others</a></li>
 									<li><a href="#ongoing" style="text-transform: none;">Ongoing</a></li>
@@ -256,505 +257,520 @@
 		</section>
 
 		<!-- Project -->
-		<section id="project" class="wrapper style3 fade-up">
-			<div class="inner">
-				<h2>Projects</h2>
-				<p>
-					I have been working on several projects with cross-discipline teams, including other Programmers,
-					Artists, Designers, Producers, and recently, Back-end Developers.
-					In addition, I also collaborated with various intercultural teammates, and I'm finding myself
-					comfortable when communicating with them, as well as supporting each other when necessary.
-					<br><br>
-					<span style="font-size: smaller;">
-						*Projects without <span class="icon brands fa-github"></span> are private, otherwise click it to go to project's repository.<br>
-						**Unreal Blueprints (code) cannot be shown via GitHub.
+		<section id="pro" class="wrapper style3 fade-up">
+			<div class="inner horizon">
+				<section id="project">
+					<h2>Projects</h2>
+					<p>
+						I have been working on several projects with cross-discipline Game Development teams, including other Programmers, Artists, Designers, Producers, and Back-end Developers.
 						<br><br>
-					</span>
-				</p>
-				<h3 id="published"><i class="fas fa-upload"></i>
-					Published</h3>
-				<p>
-					As a result, our teams have 2 polished games shipped, and looking for more in the future, with more customers attracted.
-				</p>
-				<div class="features">
-					<section id="sortify">
-						<span class="image left">
-							<img src="images/Sortify.jpeg" alt="" loading="lazy"/>
-							<br>
-							<ul class="actions fit stacked" style="padding-bottom: 2em;">
-								<li><a href="https://play.google.com/store/apps/details?id=com.Fixis.Sortify"
-										class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li>
-							</ul>
+						In addition, I also collaborated with various intercultural teammates, and I'm finding myself
+						comfortable when communicating with them, as well as supporting each other when necessary.
+						<br><br>
+						<span style="font-size: smaller;">
+							*Projects without <span class="icon brands fa-github"></span> are private, otherwise click it to go to project's repository.<br>
+							**Unreal Blueprints (code) cannot be shown via GitHub.
+							<br><br>
 						</span>
-						<h3>
-							Sortify - Go Green
-							<a href="https://github.com/qbao500/TrashSorting2020" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right; font-size: 0.9em;">Unreal Engine</span>
-						</h3>
-						<h4>2/2020 – 5/2020<span style="float: right;">Blueprint</span></h4>
-						<p>
-							3D educational game developed by 6 people, including me as the only main Programmer:
-						</p>
-						<ul class="inside">
-							<li>Built and developed whole gameplay mechanics as well as game logics</li>
-							<li>Supported Artists with exporting and importing 3D models and animations</li>
-							<li>Provided reusable code for the designer to design each level</li>
-							<li>Implemented AdMob, reduced APK size to meet Google requirement</li>
-							<li>Technically collaborated with our Producer to publish Sortify on Google Play Store, from
-								Internal Testing to official Production publishment</li>
-						</ul>
-					</section>
-					<section id="spinner">
-						<span class="image left">
-							<img src="images/SpinnerRush.jpeg" alt="" loading="lazy"/>
-							<br>
-							<ul class="actions fit">
-								<li><a href="https://play.google.com/store/apps/details?id=com.CoolPlant.SpinnerRush"
-										class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li>
-							</ul>
-						</span>
-						<h3>Spinner Rush<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
-						<h4>09/2019 – 12/2019<span style="float: right;">Blueprint / C++</span></h4>
-						<p>
-							First game project ever, also my first time working with a game engine. As 1 out of 3
-							Programmers in a 5-man team:
-						</p>
-						<ul class="inside">
-							<li>Implemented winning and losing conditions with C++</li>
-							<li>Sound tweaking using Blueprint when players win or lose</li>
-							<li>Built save system for game progress and sound settings</li>
-						</ul>
-					</section>
-				</div>
-				<h3 id="onhold"><i class="fas fa-pause"></i>
-					On hold</h3>
-				<p>
-					Project that is temporarily paused, as it's not ready to bring pleasant and immersive experience to
-					players, and team members are currently busy with other works.
-				</p>
-				<div class="features">
-					<section id="mercenape">
-						<span class="image fit">
-							<img src="images/Mercenape.webp" alt="" loading="lazy">
-							<ul class="actions stacked" style="margin-left: 3em; margin-top: 4em;">
-								<li><a href="https://baonguyen.itch.io/mercenape" class="button" target="_blank"
-										rel="noopener noreferrer">ITCH.IO</a></li>
-								<li><a href="https://youtu.be/2l-jaPvUP90" class="button" target="_blank"
-										rel="noopener noreferrer" title="Short Gameplay">Youtube</a></li>
-							</ul>
-						</span>
-						<h3>
-							Mercenape
-							<a href="#apeCodeMore" onclick="showMoreLess('apeCode')" class="icon brands fa-github" style="position: static;"></a>
-							<span style="float: right; font-size: 0.9em;">Unity</span></h3>
-						<h4>9/2020 – 12/2020<span style="float: right;">C#</span></h4>
-						<p>
-							A project that our team (7 people) was working on, although it's not fully completed yet.
-							We are planning to continue with this game someday, mostly to improve and polish every
-							aspect, and after that Steam publishment if possible.
-						</p>
-						<ul style="margin-left: 2em;">
-							<li>Responsible for developing and testing enemy behaviors and character’s combat based on
-								the design</li>
-							<li>Implemented enemy waves spawning logics and patterns with Scriptable Object</li>
-							<li>Imported 3D models and animations to Unity, also integrated with mechanic codes to make
-								them lively</li>
-							<li>Developed save-slot system to offer players more choices</li>
-							<li>Implemented flexible Object Pooling to reduce garbage collection and improve performance</li>
-							<li>Collaborated with artists to produce better aesthetic elements</li>
-							<li>Polished some aspects with Unity Shader Graph</li>
-						</ul>
-						<div id="apeCodeMore" style="display: none;">
+					</p>
+				</section>
+				<section>
+					<h3 id="published"><i class="fas fa-upload"></i>
+						Published</h3>
+					<p>
+						As a result, our teams have 2 polished games shipped, and looking for more in the future, with more customers attracted.
+					</p>
+					<div class="features">
+						<section id="sortify">
+							<span class="image left">
+								<img src="images/Sortify.jpeg" alt="" loading="lazy"/>
+								<br>
+								<ul class="actions fit stacked" style="padding-bottom: 2em;">
+									<li><a href="https://play.google.com/store/apps/details?id=com.Fixis.Sortify"
+											class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+								</ul>
+							</span>
+							<h3>
+								Sortify - Go Green
+								<a href="https://github.com/qbao500/TrashSorting2020" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right; font-size: 0.9em;">Unreal Engine</span>
+							</h3>
+							<h4>2/2020 – 5/2020<span style="float: right;">Blueprint</span></h4>
 							<p>
-								As there are 4 Programmers in our team, the GitHub reposity contains all of our code.
-								Hence, these links lead to my most important coding parts in it.
-							</p>
-							<ul class="nobullet">
-								<a href="https://github.com/qbao500/New-Mercenape/tree/main/Assets/Scripts/Enemy"
-									target="_blank" rel="noopener noreferrer">
-									Enemy folder (including Spawner)</a><br>
-								<a href="https://github.com/qbao500/New-Mercenape/blob/main/Assets/Scripts/Weapon%20System/Save%20System/SaveManager.cs"
-									target="_blank" rel="noopener noreferrer">
-									SaveManager.cs</a><br>
-								<a href="https://github.com/qbao500/New-Mercenape/blob/main/Assets/LoadGameManager.cs"
-									target="_blank" rel="noopener noreferrer">
-									LoadGameManager.cs</a><br>
-								<a href="https://github.com/qbao500/New-Mercenape/blob/main/Assets/Scripts/ObjectPooler.cs"
-									target="_blank" rel="noopener noreferrer">
-									ObjectPooler.cs</a><br>
-							</ul>
-						</div>
-					</section>
-				</div>
-				<h3 id="others"><i class="fas fa-grip-horizontal"></i>
-					Others</h3>
-				<p>
-					Smaller projects, demos, course assignments, learning materials, etc.
-				</p>
-				<div class="features">
-					<!-- Animal Instinct -->
-					<section id="animal">
-						<iframe class="image left" src="https://www.youtube.com/embed/qMqg5e5eEIY" frameborder="0" loading="lazy"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen style="margin: 0 5;">
-						</iframe>
-						<h3>Animal Instinct<span style="float: right; font-size: 0.9em;">Unreal Engine</span></h3>
-						<h4>2/2021 – 5/2021<span style="float: right;">Blueprint / C++ / PHP</span></h4>
-						<p id="animalLess" style="display: block;">
-							In this period, we aimed for a demo of Battle Royale game, utilizing Client-Server Model for multiplayer.
-						</p>
-						<div id="animalMore" style="display: none;">
-							<p>
-								In this period, we aimed for a demo of Battle Royale game, utilizing Client-Server Model for multiplayer.
-								As a Game Programmer, my responsibilities included:
+								3D educational game developed by 6 people, including me as the only main Programmer:
 							</p>
 							<ul class="inside">
-								<li>Collaborated with Datacenter department to deploy a simple Matchmaking System with Dedicated Server and Database</li>
-								<li>Established REST architecture for server communications, with the support of
-									<a href="https://www.unrealengine.com/marketplace/en-US/product/varest-plugin"
-										target="_blank" rel="noopener noreferrer">VaRest plugin</a>
-								</li>
-								<li>Developed game rules and game flows for both Server and Client</li>
-								<li>Implemented replicated and expandable Ability System with unique Skill for each Character</li>
+								<li>Built and developed whole gameplay mechanics as well as game logics</li>
+								<li>Supported Artists with exporting and importing 3D models and animations</li>
+								<li>Provided reusable code for the designer to design each level</li>
+								<li>Implemented AdMob, reduced APK size to meet Google requirement</li>
+								<li>Technically collaborated with our Producer to publish Sortify on Google Play Store, from
+									Internal Testing to official Production publishment</li>
 							</ul>
-						</div>
-						<ul class="actions" style="float: right;">
-							<li><a class="button primary small" onclick="showMoreLess('animal')" id="animalBtn">Read More</a></li>
-						</ul>
-						<span style="font-size: smaller;">
-							<br>
-							*Model and animation in this video are from Artist team.
-						</span>
-					</section>
-					<!-- Snake AI -->
-					<section>
-						<iframe class="image left" src="https://www.youtube.com/embed/HiqkWeHuEXQ" frameborder="0" loading="lazy"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen style="margin: 0 5;">
-						</iframe>
-						<h3>
-							Snake AI
-							<a href="https://github.com/qbao500/SnakeCPP" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
-						<h4>21 -22/04/2021<span style="float: right;">C++</span></h4>
-						<p id="snakeLess" style="display: block;">
-							Snake controls itself to grab the fruit and still prioritizes safety.<br><br>
-						</p>
-						<p id="snakeMore" style="display: none;">
-							Snake controls itself to grab the fruit and still prioritizes safety.<br>
-							It's not the smartest, but good enough to give player fun and challenges.<br>
-							Of course, there's an option to let players manually control the Snake in the project. 
-						</p>
-						<ul class="actions" style="float: right;">
-							<li><a class="button primary small" onclick="showMoreLess('snake')" id="snakeBtn">Read More</a></li>
-						</ul>
-					</section>
-					<!-- Battleship -->
-					<section>
-						<iframe class="image left" src="https://www.youtube.com/embed/GR81P6NFLaI" frameborder="0" loading="lazy"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen style="margin: 0 5;">
-						</iframe>
-						<h3>
-							Battleship - Player vs AI
-							<a href="https://github.com/qbao500/BattleCPP" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
-						<h4>12 -13/04/2021<span style="float: right;">C++</span></h4>
-						<p id="shipLess" style="display: block;">
-							Classic Battleship game, where Player fight with Enemy AI.<br>
-							Enemy has 3 Attack States: 
-								<b>Random Attack</b>, <b>Searching Attack</b>, and <b>Forward Attack</b>.<br><br>
-						</p>
-						<p id="shipMore" style="display: none;">
-							Classic Battleship game, where Player fight with Enemy AI.<br>
-							Enemy has 3 Attack States: 
-								<b>Random Attack</b>, <b>Searching Attack</b>, and <b>Forward Attack</b>.<br><br>
-							<b>Random Attack:</b> Default state, attack to a random Cell. 
-								If hit a ship, move to Searching Attack.<br><br>
-							<b>Searching Attack:</b> Find attackable neighbors of last hit Cell, then attack 1 of them.
-								If hit, move to Forward Attack. If not, keep attack other neighbors.
-								If no neighbor left, move back to Random Attack.<br><br>
-							<b>Forward Attack:</b> Keep attacking in the forward direction of last hit neighbor. 
-								Move back to Searching Attack if miss.
-						</p>
-						<ul class="actions" style="float: right;">
-							<li><a class="button primary small" onclick="showMoreLess('ship')" id="shipBtn">Read More</a></li>
-						</ul>
-					</section>
-					<!-- Penguin - Unity ML -->
-					<section>
-						<iframe class="image left" src="https://www.youtube.com/embed/clooYeUSGqg" frameborder="0" loading="lazy"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen style="margin: 0 5;">
-						</iframe>
-						<h3>
-							Penguin - Unity ML
-							<a href="https://github.com/qbao500/Penguins-ML/tree/main/Assets/Penguin/Scripts" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right;font-size: 0.9em;">Unity / Python environment</span></h3>
-						<h4>05/2020<span style="float: right;">C# / YAML</span></h4>
-						<ul class="actions" style="margin-top: 1.5em;">
-							<li><a href="documents/Unity Machine Learning - Self Document - Bao Nguyen.pdf"
-									class="button" target="_blank" rel="noopener noreferrer">Document</a></li>
-						</ul>
-						<p id="mlLess" style="display: block;">
-							Reinforcement Learning to train the Penguin, making it find the fish and feed the baby, or collect bones and take them to the trash bin.<br><br>
-						</p>
-						<p id="mlMore" style="display: none;">
-							It's actually a <b><a href="https://bit.ly/3qHtmnG" target="_blank"
-									rel="noopener noreferrer">tutorial</a></b> that I followed to learn Unity Machine
-							Learning.
-							The author utilizes Reinforcement Learning to train the Penguin, making it find the fish and
-							avoid bones, then feed the hungry baby.
-							<br><br>
-							Technically, the Penguin Agent needs to Observe, make a Decision then perform Action. Its
-							goal is to maximize the Reward (both positive and negative) to complete the task right and
-							as fast as possible.
-							<br><br>
-							My attempt was letting the Penguin pick both fish and bones, but it has to bring them to the
-							right place. The fish goes to the baby and the bones should be in a nearby trash bin.
-							Unsurprisingly, the training was pretty much longer than it used to be, as it's hard for the
-							Penguin to differentiate them; and it also accidentally touched the wrong one before
-							reaching the right one.
-							<br><br>
-							Although I was not making this from scratch, it was great for me to learn some basic
-							knowledge of Unity ML.
-							It's also a useful and interesting experience to observe your "kid" getting smarter and
-							better.
-							In short, nothing goes wrong when studying Machine Learning, and I hope I can practically
-							learn more of it.
-							<br><br>
-						</p>
-						<a class="button primary small" onclick="showMoreLess('ml')" id="mlBtn"
-							style="float: right;">Read More</a>
-					</section>
-					<!-- Level Design -->
-					<section>
-						<iframe class="image left" src="https://www.youtube.com/embed/0Svb5N5OeBs" frameborder="0" loading="lazy"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen style="margin: 0 5;">							
-						</iframe>
-						<h3>
-							Level Design
-							<a href="https://github.com/qbao500/LevelDesign" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right;font-size: 0.9em;">Unreal Engine</span>
-						</h3>
-						<h4>04/2020<span style="float: right;">Blueprint</span></h4>
-						<p id="levelLess" style="display: block;">
-							Lead players to a Victory destination, using colors, lights, and ready-made
-							mechanics.<br><br>
-						</p>
-						<p id="levelMore" style="display: none;">
-							An assignment in Level Design course, utilizing First Person Template in UE4.
-							The task is to lead players to a Victory destination, using colors, lights, and ready-made
-							mechanics.
-							<br><br>
-							As a Programmer, I tweaked it a little bit to offer some difficulties to the level.
-							I also took advanced of the built-in physics and control to create more challenges.
-							The result may seem hard, but I believe it would make more sense if it's in a complete game.
-							<br><br>
-						</p>
-						<ul class="actions" style="float: right;">
-							<li><a class="button primary small" onclick="showMoreLess('level')" id="levelBtn">Read More</a></li>
-						</ul>
-						<ul class="actions" style="position: relative; margin-top: -1%;">
-							<li>
-								<a href="https://bit.ly/3cMPHwk" class="button icon solid fa-download"
-									target="_blank" rel="noopener noreferrer" title="Google Drive link">Demo</a>
-							</li>
-						</ul>
-					</section>
-					<!-- Database SQLite -->
-					<section>
-						<span class="image left">
-							<img src="images/database.webp" alt="" loading="lazy">
-						</span>
-						<h3>Database<span style="float: right;font-size: 0.9em;">SQLite</span></h3>
-						<h4>04/2020<span style="float: right;">C++</span></h4>
-						<ul class="actions" style="padding-top: 0.5em;">
-							<li><a href="documents/Final Database Assignment_Bao.pdf" class="button" target="_blank"
-									rel="noopener noreferrer">Document + Code</a></li>
-						</ul>
-					</section>
-					<!-- Combat 2020 -->
-					<section id="combat">
-						<iframe class="image left" src="https:///www.youtube.com/embed/L4AlTbJi3YA" frameborder="0" loading="lazy"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen style="margin: 0 5;">
-						</iframe>
-						<h3>
-							Combat 2020
-							<a href="https://github.com/qbao500/Combat-2020" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right;font-size: 0.9em;">Unreal Engine</span>
-						</h3>
-						<h4>02/2020<span style="float: right;">Blueprint</span></h4>
-						<ul class="actions" style="margin-top: 1.5em;">
-							<li><a href="https://baonguyen.itch.io/combat-2020" class="button" target="_blank"
-									rel="noopener noreferrer">Itch.io</a></li>
-						</ul>
-						<p id="combatLess" style="display: block;">
-							An upgraded replication of <b><a href="https://bit.ly/39YEplM" target="_blank"
-									rel="noopener noreferrer">Combat - Atari 2600</a></b> on Retro Games page.
-						</p>
-						<p id="combatMore" style="display: none;">
-							An assignment in Game Design course, in which the task is to replicate a very old game and
-							"upgrade" it.
-							I found this <b><a href="https://bit.ly/39YEplM" target="_blank"
-									rel="noopener noreferrer">game</a></b> on Retro Games page, which was made in 1977.
-							It is a local multiplayer game that 2 players try to kill each other and compete who has
-							more kills to win.
-							<br><br>
-							The interesting mechanic for me is the ability to control the bullet while it's flying,
-							although it's pretty hard and partly conflicting with the movement.
-							However, it makes the game really fun and also requires some skill to be able to defeat the
-							opponent.
-							Thus, I replicated it similarly, and also implemented "teleport" mechanic, that allows the
-							tank to teleport to its bullet.
-							<br><br>
-							This is just a demo, no proper UI or sound, since I just developed it when I have freetime,
-							until the deadline.
-							However, a playtest was conducted, and I found most of testers were enjoyable when playing
-							an old-school local multiplayer game against each other.
-							I can feel the potential of this project and hopefully, I will able to continue developing
-							this when the era of local multiplayer is back with new technologies, along with extra
-							flavors.
-						</p>
-						<a class="button primary small" onclick="showMoreLess('combat')" id="combatBtn"
-							style="float: right;">Read More</a>
-					</section>
-					<!-- The F-Converter -->
-					<section>
-						<video class="image left" width="220" height="300" controls autoplay muted loop>
-							<source src="images/converter.mp4" type="video/mp4">
-						</video>
-						<h3>
-							The F-Converter
-							<a href="https://github.com/qbao500/F-Converter/tree/main/app/src/main/java/com/example/converter" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right;font-size: 0.9em;">Android Studio</span></h3>
-						<h4>28 – 29/10/2019<span style="float: right;">Java</span></h4>
-						<ul class="inside">
-							<li>Simple and fast unit converter with different categories</li>
-							<li>Built, optimized app flow, and fixed bugs within 2 days</li>
-							<li>Smooth and user-friendly app as a result</li>
-							<ul class="actions">
-								<li><a href="https://bit.ly/36y39jJ" style="position: relative;"
-										class="button icon solid fa-download" target="_blank" rel="noopener noreferrer"
-										title="Google Drive link">
-										APK</a></li>
+						</section>
+						<section id="spinner">
+							<span class="image left">
+								<img src="images/SpinnerRush.jpeg" alt="" loading="lazy"/>
+								<br>
+								<ul class="actions fit">
+									<li><a href="https://play.google.com/store/apps/details?id=com.CoolPlant.SpinnerRush"
+											class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+								</ul>
+							</span>
+							<h3>Spinner Rush<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
+							<h4>09/2019 – 12/2019<span style="float: right;">Blueprint / C++</span></h4>
+							<p>
+								First game project ever, also my first time working with a game engine. As 1 out of 3
+								Programmers in a 5-man team:
+							</p>
+							<ul class="inside">
+								<li>Implemented winning and losing conditions with C++</li>
+								<li>Sound tweaking using Blueprint when players win or lose</li>
+								<li>Built save system for game progress and sound settings</li>
 							</ul>
-						</ul>
-					</section>
-				</div>
-				<h3 id="ongoing"><i class="fas fa-forward"></i>Ongoing</h3>
-				<p></p>
-				<div class="features">
-					<section id="intern">
-						<h3>Game Programmer Intern at 
-							<a href="https://stillrunning.fi" target="_blank" rel="noopener noreferrer">Still Running</a>
-							<span style="float: right; font-size: 0.9em;">Unreal Engine</span>
-						</h3>
-						<h4>6/2021 – (expected) 11/2021<span style="float: right;">C++ / Blueprint</span></h4>
-						<p>
-							(to be updated)
-						</p>
-					</section>
-					<section>
-						<h3>1-Shot Tank
-							<a href="https://github.com/qbao500/1-Shot-Tank" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right; font-size: 0.9em;">Unity</span></h3>
-						<h4>present<span style="float: right;">C#</span></h4>
-						<p>
-							A hobby project, similar to <a href="#combat">Combat 2020</a>, for learning and practicing more Unity, C# and other technology.
-						</p>
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<ul>
-									<li class="tick">SOLID Principles</li>
-									<li class="tick">Observer Pattern</li>
-									<li class="tick">New Input System</li>
-									<li class="tick">Multiplayer same keyboard</li>
+						</section>
+					</div>
+				</section>
+				<section>
+					<h3 id="onhold"><i class="fas fa-pause"></i>
+						On hold</h3>
+					<p>
+						Project that is temporarily paused, as it's not ready to bring pleasant and immersive experience to
+						players, and team members are currently busy with other works.
+					</p>
+					<div class="features">
+						<section id="mercenape">
+							<span class="image fit">
+								<img src="images/Mercenape.webp" alt="" loading="lazy">
+								<ul class="actions stacked" style="margin-left: 3em; margin-top: 4em;">
+									<li><a href="https://baonguyen.itch.io/mercenape" class="button" target="_blank"
+											rel="noopener noreferrer">ITCH.IO</a></li>
+									<li><a href="https://youtu.be/2l-jaPvUP90" class="button" target="_blank"
+											rel="noopener noreferrer" title="Short Gameplay">Youtube</a></li>
 								</ul>
-							</div>
-							<div class="col-6 col-12-small">
-								<ul>
-									<li class="dash">LinQ C#</li>
-									<li class="dash">Unit Testing</li>
-									<li class="dash">Advanced AI & FSM</li>
-									<li class="dash">New Multiplayer Networking</li>
-								</ul>
-							</div>
-						</div>
-						<p>(to be updated)</p>
-					</section>
-					<section>
-						<h3>
-							Bao Nguyen - Portfolio
-							<a href="https://github.com/qbao500/qbao500.github.io" class="icon brands fa-github"
-								target="_blank" rel="noopener noreferrer" style="position: static;"></a>
-							<span style="float: right; font-size: 0.9em;"><a href="https://html5up.net/" target="_blank" rel="noopener noreferrer">
-								HTML5 UP</a></span>
-							</h3>
-						<h4>12/2020 – present<span style="float: right;">HTML / CSS / JS</span></h4>
-						<p>
-							Yes, this website is made from a
-							<a href="https://html5up.net/hyperspace" target="_blank"
-								rel="noopener noreferrer">template</a> of HTML5 UP,
-							with this <a href="https://wallpaperaccess.com/purple-minimalist" target="_blank"
-								rel="noopener noreferrer">wallpaper</a> for the cover background.
-							In addition, there are many customization and functional implementation that I've made to upgrade it.
-							In short, it has been improving to be more aesthetically clean, comprehensive, and straightforward.
-							<br><br>
-							<u>In Development</u>: A mini game building with 
-								<a href="https://phaser.io/" target="_blank" rel="noopener noreferrer">Phaser</a>
-								(HTML5 Game Framework).
-							<br><br>
-							<u>Caution</u>: other than 1920x1080, the web may get weird with different resolutions (not a
-							good Web Developer tho).
-							That being said, it still gets weekly updates for more features, optimization and content improvement.
-						</p>
-					</section>
-				</div>
-				<h3><i class="fas fa-laptop-code"></i>
-					Extra Courses</h3>
-				<p>Not that important, but if you want to check more:</p>
-				<div class="features" style="text-align: center;">
-					<section style="width: 50%;">
-						<h4>Udemy Courses</h4>
-						<div class="row" style="margin-top: 2em;">
-							<div class="col-6 col-12-small">
-								<p><a href="https://www.udemy.com/certificate/UC-4fb69abf-4b3d-452a-9ca3-91d7924bd4fc/" target="_blank" rel="noopener noreferrer">
-									Unity C#</a></p>
-							</div>
-							<div class="col-6 col-12-small">
-								<p><a href="https://www.udemy.com/certificate/UC-a4a27c78-29c5-4d68-94f0-58d5980dcae3/" target="_blank" rel="noopener noreferrer">
-									Unreal Engine C++</a></p>
-							</div>
-						</div>
-					</section>
-					<section style="width: 50%;">
-						<h4>Metropolia University of Applied Sciences</h4>
-						<div class="row" style="margin-top: 2em;">
-							<div class="col-6 col-12-small">
-								<p><a href="https://campusonline.fi/en/course/python-programming/" target="_blank" rel="noopener noreferrer">
-									Python</a></p>
-							</div>
-							<div class="col-6 col-12-small">
-								<p style="opacity: 0.7;">
-									<a href="https://campusonline.fi/en/course/introduction-to-javascript/" target="_blank" rel="noopener noreferrer">
-										JavaScript</a>
-									<br> (planning)
+							</span>
+							<h3>
+								Mercenape
+								<a href="#apeCodeMore" onclick="showMoreLess('apeCode')" class="icon brands fa-github" style="position: static;"></a>
+								<span style="float: right; font-size: 0.9em;">Unity</span></h3>
+							<h4>9/2020 – 12/2020<span style="float: right;">C#</span></h4>
+							<p>
+								A project that our team (7 people) was working on, although it's not fully completed yet.
+								We are planning to continue with this game someday, mostly to improve and polish every
+								aspect, and after that Steam publishment if possible.
+							</p>
+							<ul style="margin-left: 2em;">
+								<li>Responsible for developing and testing enemy behaviors and character’s combat based on
+									the design</li>
+								<li>Implemented enemy waves spawning logics and patterns with Scriptable Object</li>
+								<li>Imported 3D models and animations to Unity, also integrated with mechanic codes to make
+									them lively</li>
+								<li>Developed save-slot system to offer players more choices</li>
+								<li>Implemented flexible Object Pooling to reduce garbage collection and improve performance</li>
+								<li>Collaborated with artists to produce better aesthetic elements</li>
+								<li>Polished some aspects with Unity Shader Graph</li>
+							</ul>
+							<div id="apeCodeMore" style="display: none;">
+								<p>
+									As there are 4 Programmers in our team, the GitHub reposity contains all of our code.
+									Hence, these links lead to my most important coding parts in it.
 								</p>
+								<ul class="nobullet">
+									<a href="https://github.com/qbao500/New-Mercenape/tree/main/Assets/Scripts/Enemy"
+										target="_blank" rel="noopener noreferrer">
+										Enemy folder (including Spawner)</a><br>
+									<a href="https://github.com/qbao500/New-Mercenape/blob/main/Assets/Scripts/Weapon%20System/Save%20System/SaveManager.cs"
+										target="_blank" rel="noopener noreferrer">
+										SaveManager.cs</a><br>
+									<a href="https://github.com/qbao500/New-Mercenape/blob/main/Assets/LoadGameManager.cs"
+										target="_blank" rel="noopener noreferrer">
+										LoadGameManager.cs</a><br>
+									<a href="https://github.com/qbao500/New-Mercenape/blob/main/Assets/Scripts/ObjectPooler.cs"
+										target="_blank" rel="noopener noreferrer">
+										ObjectPooler.cs</a><br>
+								</ul>
 							</div>
-						</div>
-					</section>
-				</div>
+						</section>
+					</div>
+				</section>
+				<section>
+					<h3 id="others"><i class="fas fa-grip-horizontal"></i>
+						Others</h3>
+					<p>
+						Smaller projects, demos, course assignments, learning materials, etc.
+					</p>
+					<div class="features">
+						<!-- Animal Instinct -->
+						<section id="animal">
+							<iframe class="image left" src="https://www.youtube.com/embed/qMqg5e5eEIY" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen style="margin: 0 5;">
+							</iframe>
+							<h3>Animal Instinct<span style="float: right; font-size: 0.9em;">Unreal Engine</span></h3>
+							<h4>2/2021 – 5/2021<span style="float: right;">Blueprint / C++ / PHP</span></h4>
+							<p id="animalLess" style="display: block;">
+								In this period, we aimed for a demo of Battle Royale game, utilizing Client-Server Model for multiplayer.
+							</p>
+							<div id="animalMore" style="display: none;">
+								<p>
+									In this period, we aimed for a demo of Battle Royale game, utilizing Client-Server Model for multiplayer.
+									As a Game Programmer, my responsibilities included:
+								</p>
+								<ul class="inside">
+									<li>Collaborated with Datacenter department to deploy a simple Matchmaking System with Dedicated Server and Database</li>
+									<li>Established REST architecture for server communications, with the support of
+										<a href="https://www.unrealengine.com/marketplace/en-US/product/varest-plugin"
+											target="_blank" rel="noopener noreferrer">VaRest plugin</a>
+									</li>
+									<li>Developed game rules and game flows for both Server and Client</li>
+									<li>Implemented replicated and expandable Ability System with unique Skill for each Character</li>
+								</ul>
+							</div>
+							<ul class="actions" style="float: right;">
+								<li><a class="button primary small" onclick="showMoreLess('animal')" id="animalBtn">Read More</a></li>
+							</ul>
+							<span style="font-size: smaller;">
+								<br>
+								*Model and animation in this video are from Artist team.
+							</span>
+						</section>
+						<!-- Snake AI -->
+						<section>
+							<iframe class="image left" src="https://www.youtube.com/embed/HiqkWeHuEXQ" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen style="margin: 0 5;">
+							</iframe>
+							<h3>
+								Snake AI
+								<a href="https://github.com/qbao500/SnakeCPP" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
+							<h4>21 -22/04/2021<span style="float: right;">C++</span></h4>
+							<p id="snakeLess" style="display: block;">
+								Snake controls itself to grab the fruit and still prioritizes safety.<br><br>
+							</p>
+							<p id="snakeMore" style="display: none;">
+								Snake controls itself to grab the fruit and still prioritizes safety.<br>
+								It's not the smartest, but good enough to give player fun and challenges.<br>
+								Of course, there's an option to let players manually control the Snake in the project. 
+							</p>
+							<ul class="actions" style="float: right;">
+								<li><a class="button primary small" onclick="showMoreLess('snake')" id="snakeBtn">Read More</a></li>
+							</ul>
+						</section>
+						<!-- Battleship -->
+						<section>
+							<iframe class="image left" src="https://www.youtube.com/embed/GR81P6NFLaI" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen style="margin: 0 5;">
+							</iframe>
+							<h3>
+								Battleship - Player vs AI
+								<a href="https://github.com/qbao500/BattleCPP" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right;font-size: 0.9em;">Unreal Engine</span></h3>
+							<h4>12 -13/04/2021<span style="float: right;">C++</span></h4>
+							<p id="shipLess" style="display: block;">
+								Classic Battleship game, where Player fight with Enemy AI.<br>
+								Enemy has 3 Attack States: 
+									<b>Random Attack</b>, <b>Searching Attack</b>, and <b>Forward Attack</b>.<br><br>
+							</p>
+							<p id="shipMore" style="display: none;">
+								Classic Battleship game, where Player fight with Enemy AI.<br>
+								Enemy has 3 Attack States: 
+									<b>Random Attack</b>, <b>Searching Attack</b>, and <b>Forward Attack</b>.<br><br>
+								<b>Random Attack:</b> Default state, attack to a random Cell. 
+									If hit a ship, move to Searching Attack.<br><br>
+								<b>Searching Attack:</b> Find attackable neighbors of last hit Cell, then attack 1 of them.
+									If hit, move to Forward Attack. If not, keep attack other neighbors.
+									If no neighbor left, move back to Random Attack.<br><br>
+								<b>Forward Attack:</b> Keep attacking in the forward direction of last hit neighbor. 
+									Move back to Searching Attack if miss.
+							</p>
+							<ul class="actions" style="float: right;">
+								<li><a class="button primary small" onclick="showMoreLess('ship')" id="shipBtn">Read More</a></li>
+							</ul>
+						</section>
+						<!-- Penguin - Unity ML -->
+						<section>
+							<iframe class="image left" src="https://www.youtube.com/embed/clooYeUSGqg" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen style="margin: 0 5;">
+							</iframe>
+							<h3>
+								Penguin - Unity ML
+								<a href="https://github.com/qbao500/Penguins-ML/tree/main/Assets/Penguin/Scripts" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right;font-size: 0.9em;">Unity / Python env</span></h3>
+							<h4>05/2020<span style="float: right;">C# / YAML</span></h4>
+							<ul class="actions" style="margin-top: 1.5em;">
+								<li><a href="documents/Unity Machine Learning - Self Document - Bao Nguyen.pdf"
+										class="button" target="_blank" rel="noopener noreferrer">Document</a></li>
+							</ul>
+							<p id="mlLess" style="display: block;">
+								Reinforcement Learning to train the Penguin, making it find the fish and feed the baby, or collect bones and take them to the trash bin.<br><br>
+							</p>
+							<p id="mlMore" style="display: none;">
+								It's actually a <b><a href="https://bit.ly/3qHtmnG" target="_blank"
+										rel="noopener noreferrer">tutorial</a></b> that I followed to learn Unity Machine
+								Learning.
+								The author utilizes Reinforcement Learning to train the Penguin, making it find the fish and
+								avoid bones, then feed the hungry baby.
+								<br><br>
+								Technically, the Penguin Agent needs to Observe, make a Decision then perform Action. Its
+								goal is to maximize the Reward (both positive and negative) to complete the task right and
+								as fast as possible.
+								<br><br>
+								My attempt was letting the Penguin pick both fish and bones, but it has to bring them to the
+								right place. The fish goes to the baby and the bones should be in a nearby trash bin.
+								Unsurprisingly, the training was pretty much longer than it used to be, as it's hard for the
+								Penguin to differentiate them; and it also accidentally touched the wrong one before
+								reaching the right one.
+								<br><br>
+								Although I was not making this from scratch, it was great for me to learn some basic
+								knowledge of Unity ML.
+								It's also a useful and interesting experience to observe your "kid" getting smarter and
+								better.
+								In short, nothing goes wrong when studying Machine Learning, and I hope I can practically
+								learn more of it.
+								<br><br>
+							</p>
+							<a class="button primary small" onclick="showMoreLess('ml')" id="mlBtn"
+								style="float: right;">Read More</a>
+						</section>
+						<!-- Level Design -->
+						<section name="otherMore" style="display: none;">
+							<iframe class="image left" src="https://www.youtube.com/embed/0Svb5N5OeBs" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen style="margin: 0 5;">							
+							</iframe>
+							<h3>
+								Level Design
+								<a href="https://github.com/qbao500/LevelDesign" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right;font-size: 0.9em;">Unreal Engine</span>
+							</h3>
+							<h4>04/2020<span style="float: right;">Blueprint</span></h4>
+							<p id="levelLess" style="display: block;">
+								Lead players to a Victory destination, using colors, lights, and ready-made
+								mechanics.<br><br>
+							</p>
+							<p id="levelMore" style="display: none;">
+								An assignment in Level Design course, utilizing First Person Template in UE4.
+								The task is to lead players to a Victory destination, using colors, lights, and ready-made
+								mechanics.
+								<br><br>
+								As a Programmer, I tweaked it a little bit to offer some difficulties to the level.
+								I also took advanced of the built-in physics and control to create more challenges.
+								The result may seem hard, but I believe it would make more sense if it's in a complete game.
+								<br><br>
+							</p>
+							<ul class="actions" style="float: right;">
+								<li><a class="button primary small" onclick="showMoreLess('level')" id="levelBtn">Read More</a></li>
+							</ul>
+							<ul class="actions" style="position: relative; margin-top: -1%;">
+								<li>
+									<a href="https://bit.ly/3cMPHwk" class="button icon solid fa-download"
+										target="_blank" rel="noopener noreferrer" title="Google Drive link">Demo</a>
+								</li>
+							</ul>
+						</section>
+						<!-- Database SQLite -->
+						<section name="otherMore" style="display: none;">
+							<span class="image left">
+								<img src="images/database.webp" alt="" loading="lazy">
+							</span>
+							<h3>Database<span style="float: right;font-size: 0.9em;">SQLite</span></h3>
+							<h4>04/2020<span style="float: right;">C++</span></h4>
+							<ul class="actions" style="padding-top: 0.5em;">
+								<li><a href="documents/Final Database Assignment_Bao.pdf" class="button" target="_blank"
+										rel="noopener noreferrer">Document + Code</a></li>
+							</ul>
+						</section>
+						<!-- Combat 2020 -->
+						<section id="combat" name="otherMore" style="display: none;">
+							<iframe class="image left" src="https:///www.youtube.com/embed/L4AlTbJi3YA" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen style="margin: 0 5;">
+							</iframe>
+							<h3>
+								Combat 2020
+								<a href="https://github.com/qbao500/Combat-2020" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right;font-size: 0.9em;">Unreal Engine</span>
+							</h3>
+							<h4>02/2020<span style="float: right;">Blueprint</span></h4>
+							<ul class="actions" style="margin-top: 1.5em;">
+								<li><a href="https://baonguyen.itch.io/combat-2020" class="button" target="_blank"
+										rel="noopener noreferrer">Itch.io</a></li>
+							</ul>
+							<p id="combatLess" style="display: block;">
+								An upgraded replication of <b><a href="https://bit.ly/39YEplM" target="_blank"
+										rel="noopener noreferrer">Combat - Atari 2600</a></b> on Retro Games page.
+							</p>
+							<p id="combatMore" style="display: none;">
+								An assignment in Game Design course, in which the task is to replicate a very old game and
+								"upgrade" it.
+								I found this <b><a href="https://bit.ly/39YEplM" target="_blank"
+										rel="noopener noreferrer">game</a></b> on Retro Games page, which was made in 1977.
+								It is a local multiplayer game that 2 players try to kill each other and compete who has
+								more kills to win.
+								<br><br>
+								The interesting mechanic for me is the ability to control the bullet while it's flying,
+								although it's pretty hard and partly conflicting with the movement.
+								However, it makes the game really fun and also requires some skill to be able to defeat the
+								opponent.
+								Thus, I replicated it similarly, and also implemented "teleport" mechanic, that allows the
+								tank to teleport to its bullet.
+								<br><br>
+								This is just a demo, no proper UI or sound, since I just developed it when I have freetime,
+								until the deadline.
+								However, a playtest was conducted, and I found most of testers were enjoyable when playing
+								an old-school local multiplayer game against each other.
+								I can feel the potential of this project and hopefully, I will able to continue developing
+								this when the era of local multiplayer is back with new technologies, along with extra
+								flavors.
+							</p>
+							<a class="button primary small" onclick="showMoreLess('combat')" id="combatBtn"
+								style="float: right;">Read More</a>
+						</section>
+						<!-- The F-Converter -->
+						<section name="otherMore" style="display: none;">
+							<video class="image left" width="220" height="300" controls autoplay muted loop>
+								<source src="images/converter.mp4" type="video/mp4">
+							</video>
+							<h3>
+								The F-Converter
+								<a href="https://github.com/qbao500/F-Converter/tree/main/app/src/main/java/com/example/converter" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right;font-size: 0.9em;">Android Studio</span></h3>
+							<h4>28 – 29/10/2019<span style="float: right;">Java</span></h4>
+							<ul class="inside">
+								<li>Simple and fast unit converter with different categories</li>
+								<li>Built, optimized app flow, and fixed bugs within 2 days</li>
+								<li>Smooth and user-friendly app as a result</li>
+								<ul class="actions">
+									<li><a href="https://bit.ly/36y39jJ" style="position: relative;"
+											class="button icon solid fa-download" target="_blank" rel="noopener noreferrer"
+											title="Google Drive link">
+											APK</a></li>
+								</ul>
+							</ul>
+						</section>
+					</div>
+						<ul class="actions" style="margin-top: 2em; margin-bottom: -0.5em; justify-content: center;">
+							<li><a class="button" onclick="showMore('other', 'block', 'Show')" id="otherBtn"
+									title="More projects">Show More</a></li>
+						</ul>
+				</section>
+				<section>
+					<h3 id="ongoing"><i class="fas fa-forward"></i>Ongoing</h3>
+					<p></p>
+					<div class="features">
+						<section id="intern">
+							<h3>Game Programmer Intern at 
+								<a href="https://stillrunning.fi" target="_blank" rel="noopener noreferrer">Still Running</a>
+								<span style="float: right; font-size: 0.9em;">Unreal Engine</span>
+							</h3>
+							<h4>6/2021 – (expected) 11/2021<span style="float: right;">C++ / Blueprint</span></h4>
+							<p>
+								(to be updated)
+							</p>
+						</section>
+						<section>
+							<h3>1-Shot Tank
+								<a href="https://github.com/qbao500/1-Shot-Tank" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right; font-size: 0.9em;">Unity</span></h3>
+							<h4>present<span style="float: right;">C#</span></h4>
+							<p>
+								A hobby project, similar to <a href="#combat">Combat 2020</a>, for learning and practicing more Unity, C# and other technology.
+							</p>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul>
+										<li class="tick">SOLID Principles</li>
+										<li class="tick">Observer Pattern</li>
+										<li class="tick">New Input System</li>
+										<li class="tick">Multiplayer same keyboard</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul>
+										<li class="dash">LinQ C#</li>
+										<li class="dash">Unit Testing</li>
+										<li class="dash">Advanced AI & FSM</li>
+										<li class="dash">New Multiplayer Networking</li>
+									</ul>
+								</div>
+							</div>
+							<p>(to be updated)</p>
+						</section>
+						<section>
+							<h3>
+								Bao Nguyen - Portfolio
+								<a href="https://github.com/qbao500/qbao500.github.io" class="icon brands fa-github"
+									target="_blank" rel="noopener noreferrer" style="position: static;"></a>
+								<span style="float: right; font-size: 0.9em;"><a href="https://html5up.net/" target="_blank" rel="noopener noreferrer">
+									HTML5 UP</a></span>
+								</h3>
+							<h4>12/2020 – present<span style="float: right;">HTML / CSS / JS</span></h4>
+							<p>
+								Yes, this website is made from a
+								<a href="https://html5up.net/hyperspace" target="_blank"
+									rel="noopener noreferrer">template</a> of HTML5 UP,
+								with this <a href="https://wallpaperaccess.com/purple-minimalist" target="_blank"
+									rel="noopener noreferrer">wallpaper</a> for the cover background.
+								In addition, there are many customization and functional implementation that I've made to upgrade it.
+								In short, it has been improving to be more aesthetically clean, comprehensive, and straightforward.
+								<br><br>
+								<u>In Development</u>: A mini game building with 
+									<a href="https://phaser.io/" target="_blank" rel="noopener noreferrer">Phaser</a>
+									(HTML5 Game Framework).
+								<br><br>
+								<u>Caution</u>: other than 1920x1080, the web may get weird with different resolutions (not a
+								good Web Developer tho).
+								That being said, it still gets weekly updates for more features, optimization and content improvement.
+							</p>
+						</section>
+					</div>
+				</section>
+				<section>
+					<h3><i class="fas fa-laptop-code"></i>Extra Courses</h3>
+					<p>Not that important, but if you want to check more:</p>
+					<div class="features" style="text-align: center;">
+						<section style="width: 50%;">
+							<h4>Udemy Courses</h4>
+							<div class="row" style="margin-top: 2em;">
+								<div class="col-6 col-12-small">
+									<p><a href="https://www.udemy.com/certificate/UC-4fb69abf-4b3d-452a-9ca3-91d7924bd4fc/" target="_blank" rel="noopener noreferrer">
+										Unity C#</a></p>
+								</div>
+								<div class="col-6 col-12-small">
+									<p><a href="https://www.udemy.com/certificate/UC-a4a27c78-29c5-4d68-94f0-58d5980dcae3/" target="_blank" rel="noopener noreferrer">
+										Unreal Engine C++</a></p>
+								</div>
+							</div>
+						</section>
+						<section style="width: 50%;">
+							<h4>Metropolia University of Applied Sciences</h4>
+							<div class="row" style="margin-top: 2em;">
+								<div class="col-6 col-12-small">
+									<p><a href="https://campusonline.fi/en/course/python-programming/" target="_blank" rel="noopener noreferrer">
+										Python</a></p>
+								</div>
+								<div class="col-6 col-12-small">
+									<p style="opacity: 0.7;">
+										<a href="https://campusonline.fi/en/course/introduction-to-javascript/" target="_blank" rel="noopener noreferrer">
+											JavaScript</a>
+										<br> (planning)
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
 			</div>
 		</section>
 

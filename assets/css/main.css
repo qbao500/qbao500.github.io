@@ -3304,7 +3304,7 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding: 5em 0em 3em 0em ;
 			max-width: 100%;
 			width: 100%;
 		}
@@ -4025,7 +4025,7 @@ input, select, textarea {
 	/* Stylize scrollbar */
 	/* width */
 	::-webkit-scrollbar {
-		width: 10px;
+		width: 8px;
 	}	
 	/* Track */
 	::-webkit-scrollbar-track {
@@ -4170,4 +4170,23 @@ input, select, textarea {
 		50% {
 			clip-path: polygon(0 53%, 25% 46%, 50% 53%, 77% 69%, 100% 63%, 100% 100%, 0 100%);
 		}
+	}
+
+	.horizon {
+		scroll-snap-type: x mandatory;
+		overflow: scroll;
+		display: flex;
+		width: 100vw;
+	}
+
+	.horizon section {
+		flex: none;
+		max-width: 80vw;
+		scroll-snap-align: center;
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+
+	.horizon::-webkit-scrollbar {
+		display: none;
 	}

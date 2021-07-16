@@ -210,11 +210,11 @@ function showMoreLess(name, show = "block"){
 	}
 }
 
-function showMore(name, show = "block"){
+function showMore(name, show = "block", btnName = "Read"){
 	var more = document.getElementsByName(name + "More");
 	var btn = document.getElementById(name + "Btn");
 
-	if (btn.innerHTML === "Read More")
+	if (btn.innerHTML === btnName + " More")
 	{
 		more.forEach(m => {
 			m.style.display = show;
@@ -226,7 +226,7 @@ function showMore(name, show = "block"){
 		more.forEach(m => {
 			m.style.display = "none";
 		});
-		btn.innerHTML = "Read More";
+		btn.innerHTML = btnName + " More";
 	}
 }
 
