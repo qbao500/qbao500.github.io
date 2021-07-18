@@ -9,12 +9,12 @@
 <head>
 	<title>Bao Nguyen - Portfolio</title>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<link rel="icon" href="images/favicon.ico">
-    <!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!-- <script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js" defer async></script> -->
 </head>
@@ -35,13 +35,13 @@
 					<li><a href="#me">Me</a></li>
 					<li>
 						<div class="dropdown">
-							<a href="#project">Project</a>
+							<a href="#pro" onclick="slideTo(0)">Project</a>
 							<div class="dropdown-content">
 								<ul class="nobullet">
-									<li><a href="#published" style="text-transform: none;">Published</a></li>
-									<li><a href="#onhold" style="text-transform: none;">On hold</a></li>
-									<li><a href="#others" style="text-transform: none;">Others</a></li>
-									<li><a href="#ongoing" style="text-transform: none;">Ongoing</a></li>
+									<li><a href="#pro" onclick="slideTo(1)" style="text-transform: none;">Published</a></li>
+									<li><a href="#pro" onclick="slideTo(2)" style="text-transform: none;">On hold</a></li>
+									<li><a href="#pro" onclick="slideTo(3)" style="text-transform: none;">Others</a></li>
+									<li><a href="#pro" onclick="slideTo(4)" style="text-transform: none;">Ongoing</a></li>
 								</ul>
 							</div>
 						</div>
@@ -257,10 +257,11 @@
 		</section>
 
 		<!-- Project -->
-		<section id="pro" class="wrapper style3 fade-up">
-			<div class="inner horizon">
-				<section id="project">
-					<h2>Projects</h2>
+		<section id="pro" class="wrapper style3 fade-up swiper-container">
+			<div class="inner swiper-wrapper">
+				<!-- Project Intro -->
+				<section class="swiper-slide">
+					<h2 id="project">Projects</h2>
 					<p>
 						I have been working on several projects with cross-discipline Game Development teams, including other Programmers, Artists, Designers, Producers, and Back-end Developers.
 						<br><br>
@@ -274,7 +275,8 @@
 						</span>
 					</p>
 				</section>
-				<section>
+				<!-- Published -->
+				<section class="swiper-slide">
 					<h3 id="published"><i class="fas fa-upload"></i>
 						Published</h3>
 					<p>
@@ -332,7 +334,8 @@
 						</section>
 					</div>
 				</section>
-				<section>
+				<!-- On Hold -->
+				<section class="swiper-slide">
 					<h3 id="onhold"><i class="fas fa-pause"></i>
 						On hold</h3>
 					<p>
@@ -394,7 +397,8 @@
 						</section>
 					</div>
 				</section>
-				<section>
+				<!-- Other -->
+				<section class="swiper-slide">
 					<h3 id="others"><i class="fas fa-grip-horizontal"></i>
 						Others</h3>
 					<p>
@@ -664,7 +668,8 @@
 									title="More projects">Show More</a></li>
 						</ul>
 				</section>
-				<section>
+				<!-- Ongoing -->
+				<section class="swiper-slide">
 					<h3 id="ongoing"><i class="fas fa-forward"></i>Ongoing</h3>
 					<p></p>
 					<div class="features">
@@ -736,7 +741,8 @@
 						</section>
 					</div>
 				</section>
-				<section>
+				<!-- Extra Courses -->
+				<section class="swiper-slide">
 					<h3><i class="fas fa-laptop-code"></i>Extra Courses</h3>
 					<p>Not that important, but if you want to check more:</p>
 					<div class="features" style="text-align: center;">
@@ -772,6 +778,8 @@
 					</div>
 				</section>
 			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
 		</section>
 
 		<!-- Contact -->
@@ -866,6 +874,29 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	    	spaceBetween: 0,
+	    	grabCursor: true,
+	    	autoHeight: true,
+	    	freeMode: true,
+	    	freeModeSticky: true,
+	    	freeModeMinimumVelocity: 0.08,
+		    pagination: {
+		    	el: '.swiper-pagination',
+		    	type: 'progressbar',
+		    },
+		    keyboard: {
+				enabled: true,
+			},
+			on: {
+			    slideChange: function () {
+			    	swiper.updateAutoHeight(300);
+			    },
+			},
+	    });
+	</script>
 	<!-- <script src="assets/js/game.js"></script> -->
 
 </body>

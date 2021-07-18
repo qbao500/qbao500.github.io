@@ -245,3 +245,7 @@ function GetTypingEl() {
 		document.documentElement.style.setProperty('--data-count', typeElements[i].innerHTML.length);
 	}
 }
+
+function slideTo(index) {
+	swiper.slideToLoop(index, 300, false);
+}
