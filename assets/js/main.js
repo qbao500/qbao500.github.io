@@ -228,6 +228,8 @@ function showMore(name, show = "block", btnName = "Read"){
 		});
 		btn.innerHTML = btnName + " More";
 	}
+
+	swiper.updateAutoHeight(300);
 }
 
 function playGame()
