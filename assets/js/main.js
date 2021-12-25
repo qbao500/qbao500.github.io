@@ -208,13 +208,15 @@ function showMoreLess(name, show = "block"){
 		more.style.display = "none";
 	 	if (btn) btn.innerHTML = "Read More";
 	}
+
+	swiper.updateAutoHeight(300);
 }
 
-function showMore(name, show = "block"){
+function showMore(name, show = "block", btnName = "Read"){
 	var more = document.getElementsByName(name + "More");
 	var btn = document.getElementById(name + "Btn");
 
-	if (btn.innerHTML === "Read More")
+	if (btn.innerHTML === btnName + " More")
 	{
 		more.forEach(m => {
 			m.style.display = show;
@@ -226,8 +228,10 @@ function showMore(name, show = "block"){
 		more.forEach(m => {
 			m.style.display = "none";
 		});
-		btn.innerHTML = "Read More";
+		btn.innerHTML = btnName + " More";
 	}
+
+	swiper.updateAutoHeight(300);
 }
 
 function playGame()
@@ -244,4 +248,8 @@ function GetTypingEl() {
 	{
 		document.documentElement.style.setProperty('--data-count', typeElements[i].innerHTML.length);
 	}
+}
+
+function slideTo(index) {
+	swiper.slideToLoop(index, 300, false);
 }

@@ -58,6 +58,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	overflow-x: hidden;
 }
 
 mark {
@@ -3297,14 +3298,14 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Wrapper */
+/* Wrapper #easy*/
 
 	.wrapper {
 		position: relative;
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding: 5em 0em 3em 5em ;
 			max-width: 100%;
 			width: 100%;
 		}
@@ -4025,11 +4026,11 @@ input, select, textarea {
 	/* Stylize scrollbar */
 	/* width */
 	::-webkit-scrollbar {
-		width: 10px;
+		width: 8px;
 	}	
 	/* Track */
 	::-webkit-scrollbar-track {
-		background: #33186E; 
+		opacity: 0;
 	}	
 	/* Handle */
 	::-webkit-scrollbar-thumb {
@@ -4169,5 +4170,25 @@ input, select, textarea {
 		}
 		50% {
 			clip-path: polygon(0 53%, 25% 46%, 50% 53%, 77% 69%, 100% 63%, 100% 100%, 0 100%);
+		}
+	}
+
+	.swiper-wrapper {
+		right: 5em;
+		
+		@media screen and (max-width: 1680px) {
+			right: 4em;
+		}
+	}
+
+	.swiper-slide {
+		max-width: calc(80vw -  10em);
+		padding-left: 5em;
+		padding-right: 5em;
+
+		@media screen and (max-width: 1680px) {
+			max-width: calc(80vw -  8em);
+			padding-left: 4em;
+			padding-right: 4em;
 		}
 	}
