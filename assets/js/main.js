@@ -208,6 +208,8 @@ function showMoreLess(name, show = "block"){
 		more.style.display = "none";
 	 	if (btn) btn.innerHTML = "Read More";
 	}
+
+	swiper.updateAutoHeight(300);
 }
 
 function showMore(name, show = "block", btnName = "Read"){
