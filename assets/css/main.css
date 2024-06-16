@@ -3973,10 +3973,10 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("../../images/cover.webp");
-		background-position: bottom left;
+		background-image: url("../../images/Morbid.jpg");
+		background-position: calc(50% + 7vw) calc(0% - 0px);
 		background-repeat: no-repeat;
-		background-size:cover				
+		background-size:cover;
 	}
 
 		#intro p {
