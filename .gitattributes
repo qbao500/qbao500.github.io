@@ -1,8 +1,0 @@
-.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/DialogCamera.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/DynamicAnimation.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/FinalBossFight.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/MobSystem.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/TargetingCamera.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/TightSpaceCamera.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/CriticalBlowCamera.mp4 filter=lfs diff=lfs merge=lfs -text
